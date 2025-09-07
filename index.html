@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ENEMUSK Blog — Tutorials by ENEMUSK Enterprise</title>
+  <meta name="description" content="ENEMUSK Blog — tutorials on online business, marketing, and modern enterprise growth." />
+  <style>
+    :root{
+      --bg1:#061428; --bg2:#02040b; --accent:#0ea5e9; --accent-2:#fbbf24; --muted:#c9d6e3;
+      --card:#07243a;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:var(--muted);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:28px;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:6px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:64px;height:64px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#021;
+      box-shadow:0 6px 18px rgba(14,165,233,0.12);
+      font-size:18px;
+    }
+    h1{margin:0;font-size:26px;color:var(--accent)}
+    p.lead{margin:2px 0 0;color:#b8cfe0}
+    nav .btn{
+      background:transparent;border:1px solid rgba(255,255,255,0.06);
+      color:var(--muted);padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;
+    }
+    .hero{margin:28px 0 36px;padding:22px;border-radius:14px;background:linear-gradient(180deg, rgba(10,35,60,0.45), rgba(2,6,11,0.35));box-shadow:0 8px 30px rgba(2,6,11,0.6)}
+    .hero h2{margin:0;color:#e6f7ff}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:linear-gradient(180deg, rgba(7,36,58,0.6), rgba(3,14,24,0.45));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.04)}
+    .card h3{margin:0 0 8px;color:#cfeeff;font-size:18px}
+    .card p{margin:0 0 12px;color:#b8d6e8;font-size:14px}
+    .read{display:inline-block;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#0284c7);color:#021;text-decoration:none;font-weight:700}
+    footer{margin:40px 0 0;color:#93a6b7;text-align:center;font-size:13px}
+    @media (max-width:520px){h1{font-size:20px}.logo{width:52px;height:52px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">EN</div>
+        <div>
+          <h1>ENEMUSK Blog</h1>
+          <p class="lead">Tutorials & insights from ENEMUSK Enterprise — modern business, marketing & how-to guides.</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#posts">Tutorials</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Start learning today — simple, practical tutorials</h2>
+      <p style="margin-top:8px;color:#b6d8ee">Short guides to help you build your business and online presence — step-by-step and beginner friendly.</p>
+    </section>
+
+    <main id="posts" class="grid">
+      <article class="card">
+        <h3>How to Start a Business Online</h3>
+        <p>Learn the essential steps: pick a niche, validate an idea, set up a simple website, and get your first customers.</p>
+        <a class="read" href="#">Read tutorial</a>
+      </article>
+
+      <article class="card">
+        <h3>Modern Marketing Tips for Beginners</h3>
+        <p>Easy marketing tactics you can apply today — social media basics, simple ads, and content ideas that convert.</p>
+        <a class="read" href="#">Read tutorial</a>
+      </article>
+
+      <article class="card">
+        <h3>Creating Your First Blog in Minutes</h3>
+        <p>A step-by-step mobile-friendly guide to launch your own blog fast — domains, hosting, and posting your first article.</p>
+        <a class="read" href="#">Read tutorial</a>
+      </article>
+    </main>
+
+    <footer>
+      © <span id="year"></span> ENEMUSK Enterprise — All Rights Reserved
+    </footer>
+  </div>
+
+  <script>
+    // small script to set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
